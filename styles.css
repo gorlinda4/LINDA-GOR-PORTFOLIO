@@ -10,64 +10,80 @@
         box-shadow: 0 10px 25px rgba(255, 101, 132, 0.4);
     }
     
-    /* Add this to your existing CSS */
+    /* Add these styles to your existing CSS */
+
 @media (max-width: 768px) {
     .hero {
         height: auto;
         min-height: 100vh;
-        padding: 120px 0 60px;
+        padding: 100px 0 50px;
         text-align: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-                    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80') 
-                    no-repeat center center/cover !important;
     }
-
+    
     .hero .container {
         flex-direction: column;
     }
-
+    
     .hero-content {
-        padding: 0;
+        padding-right: 0;
         margin-bottom: 40px;
     }
-
+    
     .hero-content h1 {
         font-size: 2.2rem;
-        line-height: 1.2;
-        color: white !important;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        line-height: 1.3;
     }
-
+    
     .hero-content h2 {
         font-size: 1.3rem;
-        color: white !important;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     }
-
+    
     .hero-content p {
         font-size: 1rem;
-        max-width: 100%;
-        color: white !important;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .hero-content h1 span::after {
-        background-color: rgba(255, 101, 132, 0.4) !important;
-    }
-
-    .hero-image {
-        margin-top: 30px;
-    }
-
+    
     .hero-btns {
         flex-direction: column;
         align-items: center;
     }
+    
+    .btn-secondary, .btn-download {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+    .hero-image {
+        margin-top: 30px;
+    }
+    
+    .hero-image img {
+        max-width: 80%;
+    }
+    
+    .hero-pattern {
+        width: 300px;
+        height: 300px;
+    }
+}
 
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.1rem;
+    }
+    
     .hero-btns .btn {
-        margin: 10px 0;
-        width: 80%;
+        width: 100%;
         max-width: 250px;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
     }
 }
     /* Mobile responsiveness */
