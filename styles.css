@@ -1,0 +1,23 @@
+.btn-download {
+        background-color: var(--accent-color);
+        color: var(--white);
+        margin-left: 15px;
+        box-shadow: 0 4px 15px rgba(255, 101, 132, 0.3);
+    }
+    .btn-download:hover {
+        background-color: #ff4d6d;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(255, 101, 132, 0.4);
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 576px) {
+        .hero-btns .btn {
+            margin-left: 0;
+            margin-top: 15px;
+            width: 100%;
+        }
+        .hero-btns {
+            flex-direction: column;
+        }
+    }
